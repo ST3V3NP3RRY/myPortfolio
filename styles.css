@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Patua+One&family=Roboto:wght@100;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ---------------------------------------------------------
+                        header styles 
+-----------------------------------------------------------*/
+
+.main_container {
+    background-image: url(images/banner_background.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6em;
+    display: flex;
+    justify-content: center;
+    border-bottom: 6px solid rgb(224, 52, 0);
+
+}
+.profile {
+    max-width: 90%;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    border-radius: 8px;  
+}
+
+.profile_img {
+    border: 6px solid white;
+    border-radius: 50%;
+    min-width: 20em;
+    height: 20em;
+    object-fit: cover;
+    display: inline-block;  
+}
+
+.skill-row {
+    max-width: 50%;
+}
+
+h1 {
+    font-family: "Patua One", Helvetica, sans-serif;
+    font-size: 5em;
+    color: rgb(241, 247, 252);
+    text-shadow: 1px 1px 5px rgb(26, 29, 32);
+    letter-spacing: 2px;   
+}
+
+header p {
+    font-family: Outfit, Arial, sans-serif;
+    font-size: 2.5em;
+    line-height: 1.2em;
+    color: rgb(241, 250, 252);
+    text-shadow: 1px 1px 5px rgb(26, 29, 32);
+}
+
+/* ---------------------------------------------------------
+                        skill section styles 
+-----------------------------------------------------------*/
+
+.skills {
+    background-color: rgb(214, 233, 244);
+    padding: 3em 6em;
+}
