@@ -6,62 +6,161 @@
     padding: 0;
 }
 /* ---------------------------------------------------------
-                        header styles 
+                       Global styles
 -----------------------------------------------------------*/
-
-.main_container {
-    background-image: url(images/banner_background.svg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 6em;
-    display: flex;
-    justify-content: center;
-    border-bottom: 6px solid rgb(224, 52, 0);
-
-}
-.profile {
-    max-width: 90%;
-    padding: 2em;
-    background-color: rgba(255, 255, 255, 0.2);
-    display: flex;
-    border-radius: 8px;  
-}
-
-.profile_img {
-    border: 6px solid white;
-    border-radius: 50%;
-    min-width: 20em;
-    height: 20em;
-    object-fit: cover;
-    display: inline-block;  
-}
-
-.skill-row {
-    max-width: 50%;
+body {
+    background-color: rgb(8, 11, 60);
+    color: white;
+    font-family: Outfit, Arial, sans serif;
 }
 
 h1 {
-    font-family: "Patua One", Helvetica, sans-serif;
-    font-size: 5em;
-    color: rgb(241, 247, 252);
-    text-shadow: 1px 1px 5px rgb(26, 29, 32);
-    letter-spacing: 2px;   
+    font-size: 4rem;;
+    border-bottom: 3px solid aqua;
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+}
+h1, h2 {
+    font-family: Roboto, Arial, sans-serif;
 }
 
-header p {
-    font-family: Outfit, Arial, sans-serif;
-    font-size: 2.5em;
-    line-height: 1.2em;
-    color: rgb(241, 250, 252);
-    text-shadow: 1px 1px 5px rgb(26, 29, 32);
+h2 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid rgb(8, 11, 60);
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+}
+p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: rgb(51, 51, 51);
 }
 
 /* ---------------------------------------------------------
-                        skill section styles 
+                        header styles 
 -----------------------------------------------------------*/
 
-.skills {
-    background-color: rgb(214, 233, 244);
-    padding: 3em 6em;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 2.25rem;
+    width: 100%;
 }
+
+.mylogo {
+    height: 60px;
+}
+
+.top-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.top-nav li {
+    list-style-type: none;
+}
+.top-nav a {
+    color: white;
+    text-decoration: none;
+}
+.top-nav a:hover {
+    color: aqua;
+}
+.top-nav a:active {
+    border-bottom: 2px solid aqua;
+}
+/* ---------------------------------------------------------
+                        hero styles 
+-----------------------------------------------------------*/
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.hero-img {
+    width: 80%;
+    max-width: 500px;
+}
+.hero-description{
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;   
+}
+.hero-description p {
+    color: white;
+}
+.hero-description .second-par {
+    color: rgb(188, 249, 249);
+}
+.hero-btn {
+    background-color: aqua;
+    color: rgb(31, 7, 88);
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    width: 60%;
+    max-width: 12rem;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 872px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-container {
+        flex-direction: column-reverse;
+    }
+    .hero-img {
+        margin-bottom: 2em;
+        }
+    .hero-description{
+        max-width: 90%;
+    }
+    .hero-description p {
+        font-size: 1rem;
+}
+}
+
+/* ---------------------------------------------------------
+                       About me section
+-----------------------------------------------------------*/
+.about-me {
+    background-color: rgb(230, 255, 255);
+    color: black;
+    margin-top: 2em;
+    width: 100%;
+    padding: 3em;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid red;
+}
+.about-description {
+    width: 50%;
+}
+.sunp1 {
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px rgb(85, 85, 85);
+    min-width: 200px;
+    transform: rotate(-6deg);
+}
+
+
+/* ---------------------------------------------------------
+                        footer styles 
+-----------------------------------------------------------*/
+
+footer {
+    background-color: black;
+    padding: 2em;
+ 
+}
+    
